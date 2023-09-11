@@ -1,21 +1,28 @@
-# E-Learning-System
-Am building a e-learning web app where educators can upload their content and learners can learn.
+# Digiwiz: An Open-source Learning Platform
+> The system’s goal is to provide free courses and class resources to students who are willing to learn.
+![DigiWiz Homepage](https://raw.githubusercontent.com/seeej/digiwiz/master/static/images/digiwiz-home-screenshot.png)
 
-The project will be built with django as backend framework and bootstrap, react as frontend.
+## Built with
+* [Django 2.2.2](https://www.djangoproject.com/)
+* JavaScript
+* [Python 3.6.8](https://www.python.org/)
+* SQLite
 
-### To collaborate
-* Fork the project
-* create your own branch
-* perform pull request
-
-### Requirements
-* Django
-* pillow
-* django-braces
-* django-embed-video
-* django-allauth
+## Instructions
+1. Install [Python](https://www.python.org/) (v.3.6.8 is recommended).
+1. Clone or download this repository.
+1. Using a command prompt/terminal, go the project folder: `/digiwiz/`
+1. Install the dependencies: 
+`pip install -r requirements.txt`
+1. Run the server:
+`python manage.py runserver [port number, default=8000]`
+1. Using a web browser, go to `http://127.0.0.1:[port]/`
 
 
-### For generating graph diagram e.g uml
-* django-extensions
-* pydotplus  -> includes pyparsing
+##### To apply changes in the database:
+`python manage.py makemigrations`
+
+`python manage.py migrate`
+
+## Authors
+* [Victor Amonde](https://github.com/Victor-Amonde) - Developer
