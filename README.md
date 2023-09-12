@@ -1,6 +1,6 @@
-# Digiwiz: An Open-source Learning Platform
+# Simple-learning solutions
 > The system’s goal is to provide free courses and class resources to students who are willing to learn.
-![DigiWiz Homepage](https://raw.githubusercontent.com/seeej/digiwiz/master/static/images/digiwiz-home-screenshot.png)
+![Simple-learning Homepage](https://raw.github.com/Victor-Amonde/Simple-learning/master/static/images/Simple-learning-home-screenshot.png)
 
 ## Built with
 * [Django 2.2.2](https://www.djangoproject.com/)
@@ -11,7 +11,7 @@
 ## Instructions
 1. Install [Python](https://www.python.org/) (v.3.6.8 is recommended).
 1. Clone or download this repository.
-1. Using a command prompt/terminal, go the project folder: `/digiwiz/`
+1. Using a command prompt/terminal, go the project folder: `/Simple-learning/`
 1. Install the dependencies: 
 `pip install -r requirements.txt`
 1. Run the server:
@@ -24,5 +24,5 @@
 
 `python manage.py migrate`
 
-## Authors
+## Author
 * [Victor Amonde](https://github.com/Victor-Amonde) - Developer
