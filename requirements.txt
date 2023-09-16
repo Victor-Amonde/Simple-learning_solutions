@@ -1,6 +1,0 @@
-django
-django-ckeditor
-django-crispy-forms
-django-star-ratings
-Pillow
-sorl-thumbnail
