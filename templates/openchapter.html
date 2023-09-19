@@ -84,7 +84,7 @@
     
     <hr>
     <h2>Search Chapters<i class="fas fa-search"></i> </h2>
-    <p><span class="text-info">Simple Learning Solutions</span> is a <span class="text-danger">free learning website</span>, where learners willing to learn access free resources and courses</p>
+    <p><span class="text-info">Simple Learning Solutions</span> is a <span class="text-danger">free learning website</span>, where learners willing to learn, access free resources and courses</p>
     
   
     <div class="row">
@@ -144,7 +144,7 @@
 
         {% for i in pchapter %}
         
-        <h3 class='text-success'>Course : {{i.course.cname | capfirst }}</h3>
+        <h3 class='text-success'>Courses : {{i.course.cname | capfirst }}</h3>
         <em>Updated : {{i.course.dateof}}</em> <br>
         <em>Author : {{i.user.name | capfirst}}</em>
 <hr>
@@ -206,7 +206,7 @@
 
         <h3 ><b>{{i.title | capfirst}}</b></h3>
 
-        <p class='text-danger'><b>{{i.dispcription | capfirst}}</b></p>
+        <p class='text-danger'><b>{{i.description | capfirst}}</b></p>
 
         {% if i.chimg != 'False' %}
 

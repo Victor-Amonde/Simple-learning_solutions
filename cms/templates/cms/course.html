@@ -94,7 +94,7 @@
     
     <h2 class='text-center'>Course Details</h2>
 
-    <a href="{% url 'addchapter' book=i.slug %}" class="btn btn-info mt-2">Add Chapter</a>
+    <a href="{% url 'addchapter' book=i.slug %}" class="btn btn-info mt-2">Add Course</a>
     
     
     <div class="row mt-2">
@@ -216,7 +216,7 @@
 
   <div class="mt-2">
     <h4>Description</h4>
-    <p class="alert alert-primary"><b>{{j.dispcription}}</b></p>
+    <p class="alert alert-primary"><b>{{j.description}}</b></p>
   </div>
   
   {% if j.chimg != 'False' %}
@@ -264,7 +264,7 @@
 </div>
 
 <div class="container mt-4">
-  <a href="{% url 'deletechapter' id=i.slug book=subjectslug %}" class="btn btn-danger">Delete Chapter</a>
+  <a href="{% url 'deletechapter' id=i.slug book=subjectslug %}" class="btn btn-danger">Delete Topic</a>
 <a href="{% url 'addcontent'  id=i.slug book=subjectslug %}" class="btn btn-success">Add Content </a>
 </div>
 {% endfor %}

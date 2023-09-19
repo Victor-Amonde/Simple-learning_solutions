@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-r4mat=d5g3y5u3em38js!2!rq&s&w$6nuetfov=v+@6^o#d$ho
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ummido-ki-pathsala.herokuapp.com','localhost','*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'user',
-    'cms',
-    'core',
+    'user.apps.UserConfig',
+    'cms.apps.CmsConfig',
+    'core.apps.CoreConfig',
   
 ]
 
@@ -88,8 +88,8 @@ DATABASES = {
 
 
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
